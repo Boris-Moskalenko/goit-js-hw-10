@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 40px;
+}
+
+.calendar-input {
+    width: 272px;
+    height: 40px;
+    padding: 8px 16px;
+
+    border: 1px solid #808080;
+    border-radius: 4px;
+
+    font-size: 16px;
+    color: #2e2f42;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.calendar-input:hover {
+    border-color: #000;
+}
+
+.calendar-input:focus {
+    border-color: #4e75ff;
+}
+
+.calendar-input:disabled {
+    background-color: #f5f5f5;
+    border-color: #cfcfcf;
+    color: #808080;
+}
+
+.calendar-button {
+    width: 75px;
+    height: 40px;
+    margin-left: 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #fff;
+    background-color: #4e75ff;
+
+    cursor: pointer;
+}
+
+.calendar-button:hover {
+    background-color: #6c8cff;
+}
+
+.calendar-button:disabled {
+    background-color: #cfcfcf;
+    color: #989898;
+    cursor: not-allowed;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.timer {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value {
+    font-size: 40px;
+    font-weight: 500;
+    color: #2e2f42;
+}
+
+.label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #8c8c8c;
+}
